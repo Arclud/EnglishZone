@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE9EBE9">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titleFutureSimple"
+            style="@style/TitleText"
+            android:text="Future Simple - простое ,будущее время"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/zero"
+            style="@style/BodyText"
+            android:text="@string/future_simple_zero"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleFutureSimple" />
+        <TextView
+            android:id="@+id/titleFutureSimpleTwo"
+            style="@style/TitleText"
+            android:text="Образование Future Simple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/zero" />
+        <TextView
+            android:id="@+id/one"
+            style="@style/BodyText"
+            android:text="Утвердительные предложения"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleFutureSimpleTwo" />
+        <TableLayout
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@id/one">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="I shall play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="We shall play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="You will play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="You will play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="He /she/ it will play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="They will play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/two"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="Вопросительные приложения:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+        <TableLayout
+            android:id="@+id/tableRowTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@id/two">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Shall I play?"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Shall We play?"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Will you play?"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Will you play?"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Will He /she/ it play?"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Will they play?"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/three"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Отрицательные предложения:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRowTwo" />
+
+        <TableLayout
+            android:id="@+id/tableRowThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@id/three">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="I shall not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="We shall not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="You will not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="You will not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="He/she/it will not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="They will not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/four"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="@string/future_simple_four"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRowThree" />
+
+
+        <TextView
+            android:id="@+id/soundOne"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="I will go to Shanghai next summer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/four" />
+
+        <TextView
+            android:id="@+id/soundOneTextTranslate"
+            style="@style/SoundText"
+            android:text="Следующим летом Я поеду в Шанхай"
+            app:layout_constraintEnd_toEndOf="@id/soundOne"
+            app:layout_constraintStart_toStartOf="@id/soundOne"
+            app:layout_constraintTop_toBottomOf="@id/soundOne" />
+
+
+        <TextView
+            android:id="@+id/five"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="@string/future_simple_five"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundOneTextTranslate" />
+
+        <TextView
+            android:id="@+id/soundTwo"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="Shall we go to the beach?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/five" />
+
+        <TextView
+            android:id="@+id/soundTwoTranslate"
+            style="@style/SoundText"
+            android:padding="0dp"
+            android:text="Мы пойдем на пляж?"
+            app:layout_constraintEnd_toEndOf="@id/soundTwo"
+            app:layout_constraintStart_toStartOf="@id/soundTwo"
+            app:layout_constraintTop_toBottomOf="@id/soundTwo" />
+
+        <TextView
+            android:id="@+id/soundThree"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="Will your boss agree with our conditions?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundTwoTranslate" />
+
+        <TextView
+            android:id="@+id/soundThreeTextTranslate"
+            style="@style/SoundText"
+            android:text="Ваш босс согласится с а нашими условиями"
+            app:layout_constraintEnd_toEndOf="@id/soundThree"
+            app:layout_constraintStart_toStartOf="@id/soundThree"
+            app:layout_constraintTop_toBottomOf="@id/soundThree" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/six"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="@string/future_simple_six"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundThreeTextTranslate" />
+
+        <TextView
+            android:id="@+id/soundFour"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="I shall not(shan't) let you down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/six" />
+
+        <TextView
+            android:id="@+id/soundFourTranslate"
+            style="@style/SoundText"
+            android:padding="0dp"
+            android:text="Я вас не подведу"
+            app:layout_constraintEnd_toEndOf="@id/soundFour"
+            app:layout_constraintStart_toStartOf="@id/soundFour"
+            app:layout_constraintTop_toBottomOf="@id/soundFour" />
+
+        <TextView
+            android:id="@+id/soundFive"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="Fred will not(won't) agree to help us"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundFourTranslate" />
+
+        <TextView
+            android:id="@+id/soundFiveTextTranslate"
+            style="@style/SoundText"
+            android:text="Фред не согласиться нам помочь"
+            app:layout_constraintEnd_toEndOf="@id/soundFive"
+            app:layout_constraintStart_toStartOf="@id/soundFive"
+            app:layout_constraintTop_toBottomOf="@id/soundFive" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/titlePresentSimpleThree"
+            style="@style/TitleText"
+            android:text="Cлучаи употребление Future Simple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/soundFiveTextTranslate" />
+
+        <TextView
+            android:id="@+id/seven"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="Указание на простое действие в будущем:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlePresentSimpleThree" />
+        <TextView
+            android:id="@+id/soundSix"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="We'll return in 4 hours"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seven" />
+
+        <TextView
+            android:id="@+id/soundSixTextTranslate"
+            style="@style/SoundText"
+            android:text="Мы вернемся через 4 часа"
+            app:layout_constraintEnd_toEndOf="@id/soundSix"
+            app:layout_constraintStart_toStartOf="@id/soundSix"
+            app:layout_constraintTop_toBottomOf="@id/soundSix" />
+        <TextView
+            android:id="@+id/soundSeven"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="It will not be easy to convince him"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundSixTextTranslate" />
+
+        <TextView
+            android:id="@+id/soundSevenTextTranslate"
+            style="@style/SoundText"
+            android:text="Его будет не легко убедить"
+            app:layout_constraintEnd_toEndOf="@id/soundSeven"
+            app:layout_constraintStart_toStartOf="@id/soundSeven"
+            app:layout_constraintTop_toBottomOf="@id/soundSeven" />
+        <TextView
+            android:id="@+id/eight"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="Регулярно, повторящиеся в будущем:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundSevenTextTranslate"
+            />
+        <TextView
+            android:id="@+id/soundEight"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="I promise I'll visit you every day"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eight" />
+
+        <TextView
+            android:id="@+id/soundEightTextTranslate"
+            style="@style/SoundText"
+            android:text="Я обещаю, я буду навещать тебя каждый день."
+            app:layout_constraintEnd_toEndOf="@id/soundEight"
+            app:layout_constraintStart_toStartOf="@id/soundEight"
+            app:layout_constraintTop_toBottomOf="@id/soundEight" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

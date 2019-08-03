@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EE161616"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="3dp"
+        tools:src="@drawable/ic_launcher_background"
+        android:padding="4dp"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="19sp"
+        tools:text="Android"
+        android:textColor="#EEFCFFFC"
+        android:fontFamily="serif"
+        style="@style/Smaller_Drawable"
+        android:drawablePadding="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/recentlyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        tools:text="recent Text"
+        android:textColor="#EEFCFFFC"
+        android:textSize="20sp"
+        android:fontFamily="serif"
+        android:layout_marginLeft="5sp" />
+</android.support.constraint.ConstraintLayout>

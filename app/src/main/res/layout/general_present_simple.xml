@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE9EBE9">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/titlePresentSimple"
+            style="@style/TitleText"
+            android:text="Present Simple - простое настоящее время"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/zero"
+            style="@style/BodyText"
+            android:text="@string/general_presentsimple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlePresentSimple" />
+
+        <TextView
+            android:id="@+id/titlePresentSimpleTwo"
+            style="@style/TitleText"
+            android:text="Образование Present Simple"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/zero" />
+
+        <TextView
+            android:id="@+id/one"
+            style="@style/BodyText"
+            android:paddingBottom="8dp"
+            android:text="Утвердительные предложения:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlePresentSimpleTwo" />
+
+        <TableLayout
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@id/one">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="I play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="We play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="You play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="You play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="He / she / it plays"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="They play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/two"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="Вопросительные приложения:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRow" />
+
+        <TableLayout
+            android:id="@+id/tableRowTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@id/two">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Do I play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Do We play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Do you play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Do you play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Does He / she / it play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="Do They play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/three"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="Отрицательные предложения:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRowTwo" />
+
+        <TableLayout
+            android:id="@+id/tableRowThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="40dp"
+            app:layout_constraintTop_toBottomOf="@id/three">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="I do not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="We do not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="You do not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="You don't play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="He/she/it doesn't play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:gravity="center"
+                    android:text="They do not play"
+                    android:textColor="#050505"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/four"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="@string/general_presentsimple_four"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tableRowThree" />
+
+        <TextView
+            android:id="@+id/soundOne"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="I work - he works"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/four" />
+
+        <TextView
+            android:id="@+id/five"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="@string/general_presentsimple_five"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundOne" />
+
+        <TextView
+            android:id="@+id/soundTwo"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="I wish - he wishes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/five" />
+
+        <TextView
+            android:id="@+id/six"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="@string/general_presentsimple_six"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundTwo" />
+
+        <TextView
+            android:id="@+id/soundThree"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="I try - he tries"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/six" />
+
+        <TextView
+            android:id="@+id/seven"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="@string/general_presentsimple_seven"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundThree" />
+
+        <TextView
+            android:id="@+id/soundFour"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="Do you like rock?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/seven" />
+
+        <TextView
+            android:id="@+id/soundFourTextTranslate"
+            style="@style/SoundText"
+            android:padding="0dp"
+            android:text="Тебе нравиться рок?"
+            app:layout_constraintEnd_toEndOf="@id/soundFour"
+            app:layout_constraintStart_toStartOf="@id/soundFour"
+            app:layout_constraintTop_toBottomOf="@id/soundFour" />
+
+        <TextView
+            android:id="@+id/soundFive"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="Does he speak English?"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundFourTextTranslate" />
+
+        <TextView
+            android:id="@+id/soundFiveTextTranslate"
+            style="@style/SoundText"
+            android:text="Он говорит по английски?"
+            app:layout_constraintEnd_toEndOf="@id/soundFive"
+            app:layout_constraintStart_toStartOf="@id/soundFive"
+            app:layout_constraintTop_toBottomOf="@id/soundFive" />
+
+
+        <TextView
+            android:id="@+id/nine"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="@string/general_presentsimple_nine"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundFiveTextTranslate" />
+
+        <TextView
+            android:id="@+id/soundSix"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="I do not like black coffee"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nine" />
+
+        <TextView
+            android:id="@+id/soundSixTextTranslate"
+            style="@style/SoundText"
+            android:padding="0dp"
+            android:text="Я не люблю черный кофе"
+            app:layout_constraintEnd_toEndOf="@id/soundSix"
+            app:layout_constraintStart_toStartOf="@id/soundSix"
+            app:layout_constraintTop_toBottomOf="@id/soundSix" />
+
+        <TextView
+            android:id="@+id/soundSeven"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="She doesn't smoke"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundSixTextTranslate" />
+
+        <TextView
+            android:id="@+id/soundSevenTextTranslate"
+            style="@style/SoundText"
+            android:text="Она не курит"
+            app:layout_constraintEnd_toEndOf="@id/soundSeven"
+            app:layout_constraintStart_toStartOf="@id/soundSeven"
+            app:layout_constraintTop_toBottomOf="@id/soundSeven" />
+
+
+        <TextView
+            android:id="@+id/eight"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="@string/general_presentsimple_eight"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundSevenTextTranslate" />
+
+        <TextView
+            android:id="@+id/soundEight"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="I do want to help you"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/eight" />
+
+        <TextView
+            android:id="@+id/soundEightTranslate"
+            style="@style/SoundText"
+            android:padding="0dp"
+            android:text="Я на самом деле хочу тебе помочь"
+            app:layout_constraintEnd_toEndOf="@id/soundEight"
+            app:layout_constraintStart_toStartOf="@id/soundEight"
+            app:layout_constraintTop_toBottomOf="@id/soundEight" />
+
+        <TextView
+            android:id="@+id/soundNine"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="Jane does know how to cook."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundEightTranslate" />
+
+        <TextView
+            android:id="@+id/soundNineTextTranslate"
+            style="@style/SoundText"
+            android:text="Джейн действительно умеет готовить"
+            app:layout_constraintEnd_toEndOf="@id/soundNine"
+            app:layout_constraintStart_toStartOf="@id/soundNine"
+            app:layout_constraintTop_toBottomOf="@id/soundNine" />
+
+        <TextView
+            android:id="@+id/ten"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="В таких предложениях вспомогательный глагол никогда не сокращается."
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundNineTextTranslate" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/titlePresentSimpleThree"
+            style="@style/TitleText"
+            android:text="Cлучаи употребление Present Simple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ten" />
+
+        <TextView
+            android:id="@+id/ileven"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="Регулярные, повторяющиеся действия:"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titlePresentSimpleThree"
+            />
+        <TextView
+            android:id="@+id/soundTen"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="I often go to the park"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ileven" />
+
+        <TextView
+            android:id="@+id/soundTenTextTranslate"
+            style="@style/SoundText"
+            android:text="Я часто хожу в парк"
+            app:layout_constraintEnd_toEndOf="@id/soundTen"
+            app:layout_constraintStart_toStartOf="@id/soundTen"
+            app:layout_constraintTop_toBottomOf="@id/soundTen" />
+        <TextView
+            android:id="@+id/soundIleven"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="They play tennis every weekend"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundTenTextTranslate" />
+
+        <TextView
+            android:id="@+id/soundIlevenTextTranslate"
+            style="@style/SoundText"
+            android:text="Каждые выходные они играют в теннис"
+            app:layout_constraintEnd_toEndOf="@id/soundIleven"
+            app:layout_constraintStart_toStartOf="@id/soundIleven"
+            app:layout_constraintTop_toBottomOf="@id/soundIleven" />
+        <TextView
+            android:id="@+id/Twenty"
+            style="@style/BodyText"
+            android:paddingTop="8dp"
+            android:text="Действие в настоящем в широком смысле слова(не обязательно в момент речи):"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundIlevenTextTranslate"
+            />
+        <TextView
+            android:id="@+id/soundTwenty"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="Jim studies French"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Twenty" />
+
+        <TextView
+            android:id="@+id/soundTwentyTextTranslate"
+            style="@style/SoundText"
+            android:text="Джим изучает французкий"
+            app:layout_constraintEnd_toEndOf="@id/soundTwenty"
+            app:layout_constraintStart_toStartOf="@id/soundTwenty"
+            app:layout_constraintTop_toBottomOf="@id/soundTwenty" />
+        <TextView
+            android:id="@+id/soundThirty"
+            style="@style/TextSound"
+            android:drawableEnd="@drawable/ic_play_arrow_black_24dp"
+            android:text="We live in Boston"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/soundTwentyTextTranslate" />
+
+        <TextView
+            android:id="@+id/soundThirtyTextTranslate"
+            style="@style/SoundText"
+            android:text="Мы живем в Бостоне"
+            app:layout_constraintEnd_toEndOf="@id/soundThirty"
+            app:layout_constraintStart_toStartOf="@id/soundThirty"
+            app:layout_constraintTop_toBottomOf="@id/soundThirty" />
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
